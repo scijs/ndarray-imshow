@@ -1,0 +1,39 @@
+{
+  "name": "ndarray-imshow",
+  "version": "0.0.0",
+  "description": "Displays an ndarray as an image",
+  "main": "imshow-node.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "console-image": "~0.0.0",
+    "open": "~0.0.4",
+    "save-pixels": "~0.3.0",
+    "temporary": "~0.0.8"
+  },
+  "devDependencies": {
+    "lena": "~1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/ndarray-imshow.git"
+  },
+  "keywords": [
+    "ndarray",
+    "imshow",
+    "display",
+    "image",
+    "raster"
+  ],
+  "browser": "imshow-browser.js",
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikolalysenko/ndarray-imshow/issues"
+  },
+  "homepage": "https://github.com/mikolalysenko/ndarray-imshow"
+}
