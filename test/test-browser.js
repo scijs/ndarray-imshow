@@ -3,4 +3,4 @@
 var lena = require("lena")
 var imshow = require("../imshow-browser.js")
 
-imshow(lena)
+imshow(lena, { gray: true })

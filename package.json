@@ -1,6 +1,6 @@
 {
   "name": "ndarray-imshow",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Displays an ndarray as an image",
   "main": "imshow-node.js",
   "directories": {
@@ -10,7 +10,12 @@
     "console-image": "~0.0.0",
     "open": "~0.0.4",
     "save-pixels": "~0.3.0",
-    "temporary": "~0.0.8"
+    "temporary": "~0.0.8",
+    "typedarray-pool": "^0.1.2",
+    "apply-colormap": "0.0.0",
+    "luminance": "^1.0.2",
+    "ndarray-ops": "^1.2.1",
+    "ndarray": "^1.0.10"
   },
   "devDependencies": {
     "lena": "~1.0.0"
