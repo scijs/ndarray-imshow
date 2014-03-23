@@ -16,7 +16,6 @@ function doColorize(img, options, cb) {
                 options.gray ||
                 options.grey ||
                 options.colormap === "gray")
-  console.log(gray)
   if(img.dimension === 3) {
     if(gray) {
       //Convert to grayscale
