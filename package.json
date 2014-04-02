@@ -1,6 +1,6 @@
 {
   "name": "ndarray-imshow",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Displays an ndarray as an image",
   "main": "imshow-node.js",
   "directories": {

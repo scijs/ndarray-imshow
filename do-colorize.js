@@ -23,15 +23,23 @@ function doColorize(img, options, cb) {
       var gimg = ndarray(gbuf, [img.shape[0], img.shape[1]])
       luminance(gimg, img)
       if(("min" in options) || ("max" in options)) {
-        ops.subseq(gimg, +options.min)
-        ops.mulseq(gimg, 255.0 * (options.max - options.min))
+        var lo = ("min" in options) ? +options.min : ops.infimum(gimg)
+        ops.subseq(gimg, lo)
+        var hi = ("max" in options) ? +options.max : ops.supremum(gimg)
+        ops.mulseq(gimg, 255.0 / (hi - lo))
       }
       cb(gimg)
       pool.freeFloat32(gbuf)
     } else {
       if(("min" in options) || ("max" in options)) {
-        ops.subseq(gimg, +options.min)
-        ops.mulseq(gimg, 255.0 * (options.max - options.min))
+        var gbuf = pool.mallocFloat32(img.size)
+        var gimg = ndarray(gbuf, img.shape)
+        var lo = ("min" in options) ? +options.min : ops.infimum(img)
+        ops.subeq(gimg, img, lo)
+        var hi = ("max" in options) ? +options.max : ops.supremum(img)
+        ops.mulseq(gimg, 255.0 / (hi - lo))
+        cb(gimg)
+        pool.freeFloat32(gbuf)
       } else {
         cb(img)
       }
