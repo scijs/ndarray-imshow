@@ -57,7 +57,7 @@ function doColorize(img, options, cb) {
       opts.colormap = options.colormap
     }
     if(gray) {
-      opts.colormap = "gray"
+      opts.colormap = "greys"
     }
     var result = colorize(img, opts)
     cb(result)
