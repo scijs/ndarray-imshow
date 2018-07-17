@@ -8,14 +8,14 @@
   },
   "dependencies": {
     "console-image": "0.0.0",
-    "open": "0.0.4",
-    "save-pixels": "^1.0.0",
+    "open": "0.0.5",
+    "save-pixels": "^2.3.4",
     "temporary": "~0.0.8",
-    "typedarray-pool": "^1.0.0",
-    "apply-colormap": "^1.0.0",
-    "luminance": "^1.0.2",
-    "ndarray-ops": "^1.2.1",
-    "ndarray": "^1.0.10"
+    "typedarray-pool": "^1.1.0",
+    "apply-colormap": "^1.0.1",
+    "luminance": "^1.0.3",
+    "ndarray-ops": "^1.2.2",
+    "ndarray": "^1.0.18"
   },
   "devDependencies": {
     "lena": "~1.0.0"
